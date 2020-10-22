@@ -22,3 +22,8 @@ def ninja(request):
         dojo_id=request.POST['dojo'],
     )
     return redirect('/')
+
+def remove_1(request, dojo_id):
+    remove_1 = Dojo.objects.get(id=dojo_id)
+    remove_1.delete()
+    return redirect('/')
