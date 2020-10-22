@@ -1,0 +1,20 @@
+#all{
+    text-align: center;
+}
+
+#dojo{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+
+#ninja{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+
+#form{
+    text-align:center;
+    margin: 10px;
+}
