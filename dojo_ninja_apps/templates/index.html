@@ -47,7 +47,8 @@
     <div id="all">
         <h1>All the Dojos</h1>
         {% for dojo in dojos %}
-                <h3>Ninjas at the {{ dojo.name }} <a href="/remove_1/{{dojo.id}}">Delete</a></h3> 
+                <h3>Ninjas at the {{ dojo.name }} - <a href="/remove_1/{{dojo.id}}">Delete</a></h3> 
+                <h5>Number of Ninjas at {{ dojo.name }} - {{dojo.ninjas.count}}</h5>
                 {% for ninja in dojo.ninjas.all %}
                     <p>{{ ninja.first_name }} {{ ninja.last_name }}</p>
                 {% endfor %}
